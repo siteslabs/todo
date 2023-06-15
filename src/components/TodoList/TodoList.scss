@@ -1,0 +1,73 @@
+.todo-list {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+
+  h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  &__add-task {
+    display: flex;
+    margin-bottom: 20px;
+
+    input {
+      flex: 1;
+      margin-right: 10px;
+    }
+
+    button {
+      flex-shrink: 0;
+      width: 100px;
+    }
+  }
+
+  &__task-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &_item {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 10px;
+      padding: 10px;
+      border-radius: 5px;
+      box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      input[type='text'] {
+        flex: 1;
+        margin-right: 10px;
+        border: none;
+        border-bottom: 2px solid #555;
+        padding: 5px;
+        font-size: 18px;
+        color: #333;
+        outline: none;
+      }
+
+      button {
+        margin-left: 10px;
+        width: 100px;
+      }
+
+      .ant-checkbox {
+        margin-right: 10px;
+      }
+
+      .ant-checkbox-checked .ant-checkbox-inner {
+        background-color: #1890ff;
+        border-color: #1890ff;
+      }
+    }
+  }
+}

@@ -1,0 +1,67 @@
+.form {
+  display: flex;
+  color: $white;
+  border: 2px solid #747474;
+  backdrop-filter: blur(10px);
+  border-radius: 12px;
+  text-align: center;
+  padding: 40px;
+  min-width: 350px;
+
+  & > form {
+    width: 100%;
+  }
+
+  &__title {
+    margin-bottom: 24px;
+    color: $white;
+  }
+
+  &__button {
+    width: 100%;
+    font-weight: 800;
+
+    &:disabled {
+      background-color: $button-disabled-bg;
+      border-color: $button-disabled-color;
+      color: $button-disabled-color;
+    }
+  }
+
+  &__register {
+    color: $white;
+
+    &_text:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.login,
+.registration {
+  padding: 40px;
+  width: 100%;
+
+  &__register {
+    color: $white;
+
+    &_text:hover {
+      cursor: pointer;
+    }
+  }
+  &__title {
+    margin-bottom: 24px;
+    color: $white;
+  }
+
+  &__button {
+    width: 100%;
+    font-weight: 800;
+
+    &:disabled {
+      background-color: $button-disabled-bg;
+      border-color: $button-disabled-color;
+      color: $button-disabled-color;
+    }
+  }
+}
